@@ -1,0 +1,87 @@
+.header {
+    grid-area: header;
+}
+.box1 {
+    grid-area: b1;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box2 {
+    grid-area: b2;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box3 {
+    grid-area: b3;
+    border-bottom: 5px solid black;
+}
+
+.box4 {
+    grid-area: b4;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box5 {
+    grid-area: b5;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box6 {
+    grid-area: b6;
+    border-bottom: 5px solid black;
+}
+
+.box7 {
+    grid-area: b7;
+    border-right: 5px solid black;
+}
+
+.box8 {
+    grid-area: b8;
+    border-right: 5px solid black;
+}
+
+.box9 {
+    grid-area: b9;
+}
+
+.score1 {
+    grid-area: score1;
+}
+
+.score2 {
+    grid-area: score2;
+}
+
+.turn1 {
+    grid-area: turn1;
+    color: blue;
+}
+
+.turn2 {
+    grid-area: turn2;
+    color: grey;
+}
+
+button{
+    height: 215px;
+    background-color: white;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3;
+    text-align: center;
+    grid-template-areas: auto;
+    grid-template-areas:
+    'header header header header header'
+    '. b1 b2 b3 .'
+    '. b4 b5 b6 .'
+    '. b7 b8 b9 .'
+    'score1 turn1 . turn2 score2';
+}
