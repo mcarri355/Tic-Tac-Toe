@@ -48,6 +48,7 @@ function box1Click(){
 
 //Function that affects top middle box when clicked
 function box2Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box2").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box2").innerHTML = "X";
@@ -55,6 +56,7 @@ function box2Click(){
         document.getElementById("box2").style.fontSize = "150px";
         box2 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box2").innerHTML == "" && win == false){
         turn++
         document.getElementById("box2").innerHTML = "O";
@@ -66,6 +68,7 @@ function box2Click(){
 
 //Function that affects top right box when clicked
 function box3Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box3").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box3").innerHTML = "X";
@@ -73,6 +76,7 @@ function box3Click(){
         document.getElementById("box3").style.fontSize = "150px";
         box3 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box3").innerHTML == "" && win == false){
         turn++
         document.getElementById("box3").innerHTML = "O";
@@ -84,6 +88,7 @@ function box3Click(){
 
 //Function that affects middle left box when clicked
 function box4Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box4").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box4").innerHTML = "X";
@@ -91,6 +96,7 @@ function box4Click(){
         document.getElementById("box4").style.fontSize = "150px";
         box4 = "X";
     }
+    //When player 2 clicks
     if(turn%2 == 1 && document.getElementById("box4").innerHTML == "" && win == false){
         turn++
         document.getElementById("box4").innerHTML = "O";
@@ -102,6 +108,7 @@ function box4Click(){
 
 //Function that affects middle box when clicked
 function box5Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box5").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box5").innerHTML = "X";
@@ -109,6 +116,7 @@ function box5Click(){
         document.getElementById("box5").style.fontSize = "150px";
         box5 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box5").innerHTML == "" && win == false){
         turn++
         document.getElementById("box5").innerHTML = "O";
@@ -120,6 +128,7 @@ function box5Click(){
 
 //Function that affects middle right box when clicked
 function box6Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box6").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box6").innerHTML = "X";
@@ -127,6 +136,8 @@ function box6Click(){
         document.getElementById("box6").style.fontSize = "150px";
         box6 = "X";
     }
+    //When player 2 clicks
+    //If player 2 clicks
     if(turn%2 ==1 && document.getElementById("box6").innerHTML == "" && win == false){
         turn++
         document.getElementById("box6").innerHTML = "O";
@@ -138,6 +149,7 @@ function box6Click(){
 
 //Function that affects bottom left box when clicked
 function box7Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box7").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box7").innerHTML = "X";
@@ -145,6 +157,7 @@ function box7Click(){
         document.getElementById("box7").style.fontSize = "150px";
         box7 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box7").innerHTML == "" && win == false){
         turn++
         document.getElementById("box7").innerHTML = "O";
@@ -156,6 +169,7 @@ function box7Click(){
 
 //Function that affects bottom middle box when clicked
 function box8Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box8").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box8").innerHTML = "X";
@@ -163,6 +177,7 @@ function box8Click(){
         document.getElementById("box8").style.fontSize = "150px";
         box8 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box8").innerHTML == "" && win == false){
         turn++
         document.getElementById("box8").innerHTML = "O";
@@ -174,6 +189,7 @@ function box8Click(){
 
 //Function that affects bottom right box when clicked
 function box9Click(){
+    //If player 1 clicks
     if(turn%2 == 0 && document.getElementById("box9").innerHTML == "" && win == false){
         turn++;
         document.getElementById("box9").innerHTML = "X";
@@ -181,6 +197,7 @@ function box9Click(){
         document.getElementById("box9").style.fontSize = "150px";
         box9 = "X";
     }
+    //When player 2 clicks
     if(turn%2 ==1 && document.getElementById("box9").innerHTML == "" && win == false){
         turn++
         document.getElementById("box9").innerHTML = "O";
@@ -190,9 +207,9 @@ function box9Click(){
     }
 };
 
-//Function that creates text when either X or O get three in a row
+//Function that creates text and highlights winning row when either X or O get three in a row
 function winner(){
-    //If X Wins
+    //If X gets three in a row in the top row
     if(box1 == "X" && box2 == "X" && box3 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -203,6 +220,7 @@ function winner(){
         score1++
         document.getElementById('score1').innerHTML = score1   
     };
+    //If X gets three in a row in the middle row
     if(box4 == "X" && box5 == "X" && box6 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -213,6 +231,7 @@ function winner(){
         score1++
         document.getElementById('score1').innerHTML = score1
     };
+    //If X gets three in a row in the bottom row
     if(box7 == "X" && box8 == "X" && box9 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -223,6 +242,7 @@ function winner(){
         score1++
         document.getElementById('score1').innerHTML = score1
     };
+    //If X gets three in a row in the left column
     if(box1 == "X" && box4 == "X" && box7 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -233,6 +253,7 @@ function winner(){
         score1++
         document.getElementById('score1').innerHTML = score1
     };
+    //If X gets three in a row in the middle column
     if(box2 == "X" && box5 == "X" && box8 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -242,7 +263,8 @@ function winner(){
         win = true;
         score1++
         document.getElementById('score1').innerHTML = score1
-    }; 
+    };
+    //If X gets three in a row in the right column
     if(box3 == "X" && box6 == "X" && box9 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -252,7 +274,8 @@ function winner(){
         win = true;
         score1++
         document.getElementById('score1').innerHTML = score1
-    }; 
+    };
+    //If X gets three in a diagonal 
     if(box1 == "X" && box5 == "X" && box9 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -263,6 +286,7 @@ function winner(){
         score1++
         document.getElementById('score1').innerHTML = score1
     };
+    //If X gets three in a diagonal
     if(box3 == "X" && box5 == "X" && box7 == "X" && win == false) {
         document.getElementById('winner').innerHTML = 'P1 Wins!';
         document.getElementById('winner').style.color = 'blue'
@@ -274,7 +298,7 @@ function winner(){
         document.getElementById('score1').innerHTML = score1
     };
 
-    //If O Wins
+    //If O gets three in a row in the top row
     if(box1 == "O" && box2 == "O" && box3 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -285,6 +309,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in the middle row
     if(box4 == "O" && box5 == "O" && box6 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -295,6 +320,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in the bottom row
     if(box7 == "O" && box8 == "O" && box9 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -305,6 +331,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in the left column
     if(box1 == "O" && box4 == "O" && box7 == "O" && win == false){
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -315,6 +342,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in the middle column
     if(box2 == "O" && box5 == "O" && box8 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -324,7 +352,8 @@ function winner(){
         win = true;
         score2++
         document.getElementById('score2').innerHTML = score2
-    }; 
+    };
+    //If O gets three in a row in the right column 
     if(box3 == "O" && box6 == "O" && box9 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -335,6 +364,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in a diagonal
     if(box1 == "O" && box5 == "O" && box9 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -345,6 +375,7 @@ function winner(){
         score2++
         document.getElementById('score2').innerHTML = score2
     };
+    //If O gets three in a row in a diagonal
     if(box3 == "O" && box5 == "O" && box7 == "O" && win == false) {
         document.getElementById('winner').innerHTML = 'P2 Wins!';
         document.getElementById('winner').style.color = 'red'
@@ -356,14 +387,17 @@ function winner(){
         document.getElementById('score2').innerHTML = score2
     };
 
+    //If X and O draw change text to draw
     if(turn == 9 && win == false) document.getElementById('winner').innerHTML = 'Draw :(';
 
+    //If X and O draw or Win change color
     if(win == true || document.getElementById('winner').innerHTML == 'Draw :('){
         document.getElementById("turn1").style.color = "grey";
         document.getElementById("turn2").style.color = "grey";
     };
 };
 
+//function that resets values back to zero or null
 function refresh(){
     box1 = 0;
     box2 = 0;

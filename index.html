@@ -8,24 +8,41 @@
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
+    <!-- grid container -->
     <div class="container">
+        <!-- title of html -->
         <div class="header">Tic-Tac-Toe</div>
+        <!-- top left box -->
         <button class="box1 button" id="box1" onclick="box1Click();playerTurn();winner()"></button>
+        <!-- top middle box -->
         <button class="box2 button" id="box2" onclick="box2Click();playerTurn();winner()"></button>
+        <!-- top right box -->
         <button class="box3 button" id="box3" onclick="box3Click();playerTurn();winner()"></button>
+        <!-- middle left box -->
         <button class="box4 button" id="box4" onclick="box4Click();playerTurn();winner()"></button>
+        <!-- middle box -->
         <button class="box5 button" id="box5" onclick="box5Click();playerTurn();winner()"></button>
+        <!-- middle right box -->
         <button class="box6 button" id="box6" onclick="box6Click();playerTurn();winner()"></button>
+        <!-- bottom left box -->
         <button class="box7 button" id="box7" onclick="box7Click();playerTurn();winner()"></button>
+        <!-- bottom middle box -->
         <button class="box8 button" id="box8" onclick="box8Click();playerTurn();winner()"></button>
+        <!-- bottom right box -->
         <button class="box9 button" id="box9" onclick="box9Click();playerTurn();winner()"></button>
+        <!-- player 1 score -->
         <div class="score1" id="score1">0</div>
+        <!-- player 2 score -->
         <div class="score2" id="score2">0</div>
+        <!-- player 1 turn -->
         <div id="turn1" class="turn1">P1</div>
+        <!-- player 2 turn -->
         <div id="turn2" class="turn2">P2</div>
+        <!-- winner congrats -->
         <div id="winner" class="winner"></div>
+        <!-- refresh button -->
         <button class="refresh" onclick="refresh()"><img src="refresh.png" alt="" width="75px" height="75px"></button>
-        <script src="./ticTacToe.js"></script>
     </div>
+    <script src="./ticTacToe.js"></script>
 </body>
 </html>
